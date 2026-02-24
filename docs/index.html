@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-of-1 Angina — Angina Symptom Diary for iOS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1d1d1f; line-height: 1.6; }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 24px 60px;
+            background: linear-gradient(180deg, #f5f5f7 0%, #fff 100%);
+        }
+        .hero .icon {
+            width: 140px; height: 140px;
+            border-radius: 30px;
+            margin: 0 auto 24px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+        .hero .icon img { width: 100%; height: 100%; object-fit: cover; }
+        .hero h1 { font-size: 2.4em; font-weight: 700; margin-bottom: 4px; }
+        .hero .tagline { font-size: 1.1em; color: #6e6e73; margin-bottom: 20px; }
+        .hero .about { font-size: 1.05em; color: #444; margin-bottom: 32px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .app-store-badge { height: 54px; }
+        .app-store-badge img { height: 54px; }
+
+        /* Features */
+        .features {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        .features h2 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 40px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+        }
+        .feature-card {
+            background: #f5f5f7;
+            border-radius: 16px;
+            padding: 28px;
+        }
+        .feature-card .feature-icon {
+            font-size: 2em;
+            margin-bottom: 12px;
+        }
+        .feature-card h3 {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+        .feature-card p {
+            font-size: 0.95em;
+            color: #6e6e73;
+        }
+
+        /* Privacy banner */
+        .privacy-section {
+            background: #1d1d1f;
+            color: #f5f5f7;
+            text-align: center;
+            padding: 60px 24px;
+        }
+        .privacy-section h2 {
+            font-size: 1.6em;
+            margin-bottom: 12px;
+        }
+        .privacy-section p {
+            font-size: 1.05em;
+            color: #a1a1a6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Disclaimer */
+        .disclaimer {
+            text-align: center;
+            padding: 40px 24px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .disclaimer p {
+            font-size: 0.9em;
+            color: #86868b;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 24px 40px;
+            color: #6e6e73;
+            font-size: 0.9em;
+        }
+        footer a { color: #007AFF; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        .footer-links { margin-bottom: 12px; }
+        .footer-links a { margin: 0 12px; }
+        .credits { font-size: 0.85em; color: #86868b; margin-top: 8px; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="icon">
+            <img src="app-icon.png" alt="N-of-1 Angina app icon">
+        </div>
+        <h1>N-of-1 Angina</h1>
+        <p class="tagline">Angina Symptom Diary</p>
+        <p class="about">An "N-of-1" approach focuses on one person &mdash; you. Track your symptoms over time, spot patterns, and share meaningful reports with your healthcare team.</p>
+        <!-- Replace # with your App Store link once live -->
+        <a class="app-store-badge" href="#">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h2>Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">&#128213;</div>
+                <h3>Symptom Diary</h3>
+                <p>Log chest pain episodes with severity, duration, location, and triggers. Quick-log option for fast entries on the go.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128203;</div>
+                <h3>Validated Questionnaires</h3>
+                <p>Seattle Angina Questionnaire and CCS Angina Grading to track your quality of life and symptom severity over time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#127939;</div>
+                <h3>Dundee Step Test</h3>
+                <p>Monitor your exercise tolerance with a guided step test built right into the app.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128200;</div>
+                <h3>Charts &amp; Trends</h3>
+                <p>Visualise symptom patterns and questionnaire scores over time to understand your progress.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128196;</div>
+                <h3>PDF Reports</h3>
+                <p>Generate professional reports summarising your data. Share directly with your cardiologist via email or AirDrop.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128138;</div>
+                <h3>Medications</h3>
+                <p>Keep a simple record of your current medications, always to hand at appointments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="privacy-section">
+        <h2>Your data stays yours</h2>
+        <p>Your data syncs via iCloud to your other devices. No data is shared with third parties. No accounts, no tracking.</p>
+    </section>
+
+    <!-- Disclaimer -->
+    <section class="disclaimer">
+        <p>This app is for personal symptom tracking only. It does not provide medical advice, diagnosis, or treatment. Always consult your healthcare professional.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://cardiology-in-motion.github.io/nof1-angina/privacy.html">Privacy Policy</a>
+            <a href="https://cardiology-in-motion.github.io/nof1-angina/support.html">Support</a>
+            <a href="https://github.com/Cardiology-in-Motion/nof1-angina">GitHub</a>
+        </div>
+        <p>&copy; 2026 Enhui Yong. All rights reserved.</p>
+        <p class="credits">E. Yong &amp; P. Lim, Cardiologists &middot; G. Sharma, Software Developer</p>
+    </footer>
+
+</body>
+</html>
