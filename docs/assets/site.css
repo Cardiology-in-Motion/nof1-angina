@@ -73,6 +73,7 @@ a:hover { color: var(--accent); }
 .lede { margin: 22px 0 0; font-size: 1.2rem; max-width: 32em; }
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; margin-top: 30px; }
 .badge { width: 150px; height: 50px; }
+.badge-play { width: 192px; height: 74px; margin: -12px; }
 .soon { color: var(--muted); font-size: 0.95rem; }
 .hero-icon { width: 84px; border-radius: 22.5%; margin-bottom: 20px; box-shadow: 0 6px 18px rgba(60, 30, 20, 0.16); }
 .gallery { width: min(300px, 100%); justify-self: end; text-align: center; }
